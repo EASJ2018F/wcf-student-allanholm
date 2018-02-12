@@ -18,6 +18,10 @@ namespace WcfService1allan
         public Service1()
         {
             _listOfStudents = new List<Student>();
+
+            AddStudent(1,"john", "5G");
+            AddStudent(2,"Conrad", "8S");
+            AddStudent(7,"bent", "9k");
         }
 
         public static List<Student> ListOfStudents
