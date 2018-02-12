@@ -20,7 +20,14 @@ namespace MyNameWCFservice.Tests
         [TestMethod()]
         public void GetMyEmailTest()
         {
-            Assert.Fail();
+            //arrange
+            var service1 = new Service1();
+
+            //act
+            string email = service1.GetMyEmail();
+
+            //assert
+            Assert.AreEqual("alla2653@easj.edu.dk", email);
         }
     }
 }
