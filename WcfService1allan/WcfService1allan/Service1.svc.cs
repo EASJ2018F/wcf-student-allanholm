@@ -12,22 +12,52 @@ namespace WcfService1allan
     // NOTE: In order to launch WCF Test Client for testing this service, please select Service1.svc or Service1.svc.cs at the Solution Explorer and start debugging.
     public class Service1 : IService1
     {
-        public string GetData(int value)
+        private static List<Student> _listOfStudents;
+
+
+        public Service1()
         {
-            return string.Format("You entered: {0}", value);
+            _listOfStudents = new List<Student>();
         }
 
-        public CompositeType GetDataUsingDataContract(CompositeType composite)
+        public static List<Student> ListOfStudents
         {
-            if (composite == null)
+            get
             {
-                throw new ArgumentNullException("composite");
+                if (_listOfStudents == null)
+                {
+                    _listOfStudents = new List<Student>();
+                }
+
+                return _listOfStudents;
             }
-            if (composite.BoolValue)
-            {
-                composite.StringValue += "Suffix";
-            }
-            return composite;
         }
+        public void AddStudent(int StudentID, string Name, string ClassName)
+        {
+            ListOfStudents.Add(new Student(Name, ClassName, StudentID));
+        }
+
+        public void RemoveStudent(int StudentID)
+        {
+            ListOfStudents.Remove(FindStudent(StudentID));
+        }
+
+        public void EditStudent(int StudentID, string Name, string ClassName)
+        {
+            RemoveStudent(StudentID);
+            ListOfStudents.Add(new Student(Name, ClassName, StudentID));
+        }
+
+        public List<Student> GetAllStudents()
+        {
+            return ListOfStudents;
+        }
+
+        public Student FindStudent(int StudentID)
+        {
+            Student FoundStudent = ListOfStudents.Find(x => x.StudentID.Equals(StudentID));
+            return FoundStudent;
+        }
+        
     }
 }

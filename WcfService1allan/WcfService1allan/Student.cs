@@ -16,16 +16,19 @@
         public string Name
         {
             get { return _name; }
+            set { _name = value; }
         }
 
         public string ClassName
         {
             get { return _className; }
+            set { _className = value; }
         }
 
         public int StudentID
         {
             get { return _studentID; }
+            set { _studentID = value; }
         }
     }
 }

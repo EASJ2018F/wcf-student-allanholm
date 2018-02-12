@@ -22,7 +22,7 @@ namespace WcfService1allan
         void EditStudent(int StudentID, string Name, string ClassName);
 
         [OperationContract]
-        List<string> GetAllStudents();
+        List<Student> GetAllStudents();
 
         [OperationContract]
         Student FindStudent(int StudentID);
