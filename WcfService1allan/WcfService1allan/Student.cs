@@ -6,6 +6,10 @@
         private string _className;
         private int _studentID;
 
+        public Student()
+        {
+
+        }
         public Student(string name, string className, int studentID)
         {
             _name = name;
