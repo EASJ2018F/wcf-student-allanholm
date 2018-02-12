@@ -14,7 +14,14 @@ namespace MyNameWCFservice.Tests
         [TestMethod()]
         public void GetNameTest()
         {
-            Assert.Fail();
+            //arrange
+            var service1 =new Service1();
+
+            //act
+            string name = service1.GetName();
+
+            //assert
+            Assert.AreEqual("Allan", name);
         }
 
         [TestMethod()]
