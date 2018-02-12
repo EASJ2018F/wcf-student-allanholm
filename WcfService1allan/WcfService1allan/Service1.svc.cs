@@ -18,10 +18,10 @@ namespace WcfService1allan
         public Service1()
         {
             _listOfStudents = new List<Student>();
-
-            AddStudent(1,"john", "5G");
-            AddStudent(2,"Conrad", "8S");
-            AddStudent(7,"bent", "9k");
+            AddStudent(1, "john", "3G");
+            AddStudent(2, "herman", "5t");
+            AddStudent(5, "rene", "9i");
+            
         }
 
         public static List<Student> ListOfStudents
@@ -54,7 +54,7 @@ namespace WcfService1allan
 
         public List<Student> GetAllStudents()
         {
-            return ListOfStudents;
+            return _listOfStudents;
         }
 
         public Student FindStudent(int StudentID)
