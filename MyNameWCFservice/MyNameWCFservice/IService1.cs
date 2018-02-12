@@ -12,9 +12,12 @@ namespace MyNameWCFservice
     [ServiceContract]
     public interface IService1
     {
-
         [OperationContract]
         string GetName();
+
+        [OperationContract]
+        string GetMyEmail();
+
         // TODO: Add your service operations here
     }
 

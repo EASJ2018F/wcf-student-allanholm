@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyNameWCFservice", "MyNameWCFservice\MyNameWCFservice.csproj", "{F79B6E32-CFFA-4672-825E-D00BFE46B72A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyNameWCFserviceTests", "MyNameWCFserviceTests\MyNameWCFserviceTests.csproj", "{5B4BFBB1-4E09-48BF-ADAA-0831D4C1CCA5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{F79B6E32-CFFA-4672-825E-D00BFE46B72A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F79B6E32-CFFA-4672-825E-D00BFE46B72A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F79B6E32-CFFA-4672-825E-D00BFE46B72A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B4BFBB1-4E09-48BF-ADAA-0831D4C1CCA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B4BFBB1-4E09-48BF-ADAA-0831D4C1CCA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B4BFBB1-4E09-48BF-ADAA-0831D4C1CCA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B4BFBB1-4E09-48BF-ADAA-0831D4C1CCA5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
